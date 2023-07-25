@@ -17,55 +17,55 @@ let products1 = [
     {
         id: 1,
         name: 'Fried shrimp with cheese',
-        image: 'product_1.png',
+        image: './img/product_1.png',
         price: 120000
     },
     {
         id: 2,
         name: 'Avocado and egg toast',
-        image: 'product_2.png',
+        image: './img/product_2.png',
         price: 120000
     },
     {
         id: 3,
         name: 'Green house salad',
-        image: 'product_3.png',
+        image: './img/product_3.png',
         price: 220000
     },
     {
         id: 4,
         name: 'Chicken burger',
-        image: 'product_4.png',
+        image: './img/product_4.png',
         price: 123000
     },
     {
         id: 5,
         name: 'Classic ceasar salad',
-        image: 'product_5.png',
+        image: './img/product_5.png',
         price: 320000
     },
     {
         id: 6,
         name: 'Grilled fish with orange sauce',
-        image: 'product_6.png',
+        image: './img/product_6.png',
         price: 120000
     },
     {
         id: 7,
         name: 'Sashimi salmon',
-        image: 'product_7.jpg',
+        image: './img/product_7.jpg',
         price: 170000
     },
     {
         id: 8,
         name: 'smoked beef',
-        image: 'product_8.png',
+        image: './img/product_8.png',
         price: 220000
     },
     {
         id: 9,
         name: 'Seafood pasta',
-        image: 'product_9.png',
+        image: './img/product_9.png',
         price: 250000
     },
 ];
@@ -85,7 +85,6 @@ function initApp(){
 initApp();
 function addToCard(key){
     if(listCards[key] == null){
-        // copy product form list to list card
         listCards[key] = JSON.parse(JSON.stringify(products1[key]));
         listCards[key].quantity = 1;
     }
